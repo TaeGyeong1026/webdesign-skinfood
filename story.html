@@ -1,0 +1,737 @@
+<!doctype html>
+
+<html lang="ko">
+
+<head>
+    <title>맛있는 화장품 - 스킨푸드</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function() {
+            AOS.init();
+        }); //end
+
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/story.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="ad-banner">
+        신규회원 특별혜택 20% WELCOME COUPON 증정 !!
+        <div id="ad-close"><img src="img/ad-close.png" alt="ad-close" /></div>
+    </div>
+    <div class="goto-top">
+        <img class="goto-top-arr on" src="img/top-but.png" alt="goto-top" />
+        <img class="goto-top-arr" src="img/top-but-dark.png" alt="goto-top-dark" />
+        TOP
+    </div>
+    <div class="mode-btn-wrap">
+        <img class="mode-btn on" src="img/dark-mode-bt.png" alt="dark-mode-button" />
+        <img class="mode-btn" src="img/light-mode-bt.png" alt="light-mode-button" />
+    </div>
+    <header>
+        <div class="container">
+            <ul class="header-button-wrap-1">
+                <li class="header-but"><a href="#">멤버십</a></li>
+                <li class="header-but"><a href="#">공지사항</a></li>
+                <li class="header-but"><a href="#">고객센터</a></li>
+            </ul>
+            <div class="header-logo">
+                <a class="header-logo-img on" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+                <a class="header-logo-img" href="index.html"><img src="img/logo-dark.png" alt="logo" /></a>
+            </div>
+            <ul class="header-button-wrap-2">
+                <li class="header-but"><a href="#">로그인</a></li>
+                <li class="header-but"><a href="#">회원가입</a></li>
+                <li class="header-but"><a href="#">주문/배송조회</a></li>
+                <li class="header-but"><a href="#">장바구니</a></li>
+            </ul>
+        </div>
+        <div class="burger-but">
+            <div class="burger-bar" id="burger-1"></div>
+            <div class="burger-bar" id="burger-2"></div>
+            <div class="burger-bar" id="burger-3"></div>
+        </div>
+        <div class="mobile-menu">
+            <div class="m-menu-top">
+                <div class="m-menu-top-but"><a href="#">로그인</a></div>
+                <div class="m-menu-top-but"><a href="#">회원가입</a></div>
+            </div>
+            <div class="m-menu-sub-wrap">
+                <ul class="m-menu-sub-in">
+                    <li class="m-menu-sub-top"><a href="#">멤버십</a></li>
+                    <li class="m-menu-sub-top"><a href="#">고객센터</a></li>
+                    <li class="m-menu-sub-top"><a href="#">공지사항</a></li>
+                    <li class="m-menu-sub-top"><a href="#">주문/배송조회</a></li>
+                    <li class="m-menu-sub-top"><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="m-menu-in-wrap">
+                <div class="m-menu-wrap">
+                    <ul class="m-menu">
+                        <li class="m-menu-sub but-on"><a href="#">BRAND</a></li>
+                        <li class="m-menu-sub"><a href="#">NEW PRODUCT</a></li>
+                        <li class="m-menu-sub"><a href="#">SKINCARE</a></li>
+                        <li class="m-menu-sub"><a href="#">MAKE UP</a></li>
+                        <li class="m-menu-sub"><a href="#">BODY&#8226;HAIR</a></li>
+                        <li class="m-menu-sub"><a href="#">MEN</a></li>
+                        <li class="m-menu-sub"><a href="#">COMMUNITY</a></li>
+                    </ul>
+                </div>
+                <div class="m-menu-con-wrap">
+                    <ul class="m-menu-con-main con-on">
+                        <li class="m-menu-con-title">BRAND
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="story.html">브랜드 스토리</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">스킨푸드 소식</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">스킨푸드 활동</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">푸드 마니아</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">글로벌 스킨푸드</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">매장안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-menu-con-main">
+                        <li class="m-menu-con-title">유형별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">클렌징</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">팩/마스크</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">토너</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">아이케어</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">에센스/세럼</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">오일/밤</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">에멀전</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">크림</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">선케어</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">미스트</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">피부고민별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">푸드라인업
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">블랙슈가</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">수분포도</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">로열허니</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">피치 코튼</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">유자</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">골드 캐비어</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">토마토</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">상추오이</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">아보카도</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">흑석류</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">흰민들레</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">복분자</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">로열허니 착한</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">수분베리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-menu-con-main">
+                        <li class="m-menu-con-title">유형별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">클렌징</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">팩/마스크</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">토너</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">아이케어</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">에센스/세럼</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">오일/밤</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">에멀전</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">크림</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">선케어</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">미스트</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">피부고민별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">푸드라인업
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">블랙슈가</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">수분포도</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">로열허니</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">피치 코튼</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">유자</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">골드 캐비어</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">토마토</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">상추오이</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">아보카도</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">흑석류</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">흰민들레</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">복분자</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">로열허니 착한</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">수분베리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-menu-con-main">
+                        <li class="m-menu-con-title">유형별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">베이스 메이크업</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">컬러 메이크업</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">네일</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">화장소품</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">푸드라인업
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">로열허니</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">토마토</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">초콜릿</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">청포도</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">피치 코튼</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">미네랄</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-menu-con-main">
+                        <li class="m-menu-con-title">유형별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">바디</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">헤어</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">베이비</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">세트상품</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">방향</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">피부고민별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">푸드라인업
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">밀크</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">시어버터</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">레몬 버베나</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">포도씨 오일</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">허니</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">아르간오일</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-menu-con-main">
+                        <li class="m-menu-con-title">유형별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">쉐이빙/클렌징</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">팩/마스크</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">토너</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">에멀전</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">플루이드</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">에센스/크림</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">메이크업/크림</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">피부고민별
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="m-menu-con-title">푸드라인업
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">블랙슈가</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">티트리</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">자작나무수액</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">복분자</a></li>
+                                <li class="m-menu-con-sub-in"><a href="#">수분베리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-menu-con-main">
+                        <li class="m-menu-con-title">BRAND
+                            <ul class="m-menu-con-sub">
+                                <li class="m-menu-con-sub-in"><a href="#">공지사항</a></li>
+                                <li class="m-menu-con-sub-in even-sub"><a href="#">멤버십</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="top"><a href="#">BRAND</a></li>
+            <li class="top"><a href="#">NEW PRODUCT</a></li>
+            <li class="top"><a href="#">SKINCARE</a></li>
+            <li class="top"><a href="#">MAKE UP</a></li>
+            <li class="top"><a href="#">BODY&#8226;HAIR</a></li>
+            <li class="top"><a href="#">MEN</a></li>
+            <li class="top"><a href="#">COMMUNITY</a></li>
+        </ul>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu-position">
+                <ul class="sub-category">
+                    <li class="sub-column-item"><a href="story.html">브랜드 스토리</a></li>
+                    <li class="sub-column-item"><a href="#">스킨푸드 소식</a></li>
+                    <li class="sub-column-item"><a href="#">수킨푸드 활동</a></li>
+                    <li class="sub-column-item"><a href="#">푸드 마니아</a></li>
+                    <li class="sub-column-item"><a href="#">글로벌 스킨푸드</a></li>
+                    <li class="sub-column-item"><a href="#">매장안내</a></li>
+                </ul>
+                <ul class="sub-category">
+                    <li class="sub-column">유형별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">클렌징</a></li>
+                            <li class="sub-column-item"><a href="#">팩/마스크</a></li>
+                            <li class="sub-column-item"><a href="#">토너</a></li>
+                            <li class="sub-column-item"><a href="#">아이케어</a></li>
+                            <li class="sub-column-item"><a href="#">에센스/세럼</a></li>
+                            <li class="sub-column-item"><a href="#">오일/밤</a></li>
+                            <li class="sub-column-item"><a href="#">에멀전</a></li>
+                            <li class="sub-column-item"><a href="#">크림</a></li>
+                            <li class="sub-column-item"><a href="#">선케어</a></li>
+                            <li class="sub-column-item"><a href="#">미스트</a></li>
+                            <li class="sub-column-item"><a href="#">세트상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">피부고민별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">각질</a></li>
+                            <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                            <li class="sub-column-item"><a href="#">다크서클</a></li>
+                            <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                            <li class="sub-column-item"><a href="#">민감</a></li>
+                            <li class="sub-column-item"><a href="#">보습</a></li>
+                            <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                            <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                            <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                            <li class="sub-column-item"><a href="#">피부결</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">푸드라인업
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">블랙슈가</a></li>
+                            <li class="sub-column-item"><a href="#">수분포도</a></li>
+                            <li class="sub-column-item"><a href="#">로열허니</a></li>
+                            <li class="sub-column-item"><a href="#">피치 코튼</a></li>
+                            <li class="sub-column-item"><a href="#">유자</a></li>
+                            <li class="sub-column-item"><a href="#">골드 캐비어</a></li>
+                            <li class="sub-column-item"><a href="#">토마토</a></li>
+                            <li class="sub-column-item"><a href="#">상추오이</a></li>
+                            <li class="sub-column-item"><a href="#">아보카도</a></li>
+                            <li class="sub-column-item"><a href="#">흑석류</a></li>
+                            <li class="sub-column-item"><a href="#">흰민들레</a></li>
+                            <li class="sub-column-item"><a href="#">복분자</a></li>
+                            <li class="sub-column-item"><a href="#">로열허니 착한</a></li>
+                            <li class="sub-column-item"><a href="#">수분베리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sub-category">
+                    <li class="sub-column">유형별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">클렌징</a></li>
+                            <li class="sub-column-item"><a href="#">팩/마스크</a></li>
+                            <li class="sub-column-item"><a href="#">토너</a></li>
+                            <li class="sub-column-item"><a href="#">아이케어</a></li>
+                            <li class="sub-column-item"><a href="#">에센스/세럼</a></li>
+                            <li class="sub-column-item"><a href="#">오일/밤</a></li>
+                            <li class="sub-column-item"><a href="#">에멀전</a></li>
+                            <li class="sub-column-item"><a href="#">크림</a></li>
+                            <li class="sub-column-item"><a href="#">선케어</a></li>
+                            <li class="sub-column-item"><a href="#">미스트</a></li>
+                            <li class="sub-column-item"><a href="#">세트상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">피부고민별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">각질</a></li>
+                            <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                            <li class="sub-column-item"><a href="#">다크서클</a></li>
+                            <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                            <li class="sub-column-item"><a href="#">민감</a></li>
+                            <li class="sub-column-item"><a href="#">보습</a></li>
+                            <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                            <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                            <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                            <li class="sub-column-item"><a href="#">피부결</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">푸드라인업
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">블랙슈가</a></li>
+                            <li class="sub-column-item"><a href="#">수분포도</a></li>
+                            <li class="sub-column-item"><a href="#">로열허니</a></li>
+                            <li class="sub-column-item"><a href="#">피치 코튼</a></li>
+                            <li class="sub-column-item"><a href="#">유자</a></li>
+                            <li class="sub-column-item"><a href="#">골드 캐비어</a></li>
+                            <li class="sub-column-item"><a href="#">토마토</a></li>
+                            <li class="sub-column-item"><a href="#">상추오이</a></li>
+                            <li class="sub-column-item"><a href="#">아보카도</a></li>
+                            <li class="sub-column-item"><a href="#">흑석류</a></li>
+                            <li class="sub-column-item"><a href="#">흰민들레</a></li>
+                            <li class="sub-column-item"><a href="#">복분자</a></li>
+                            <li class="sub-column-item"><a href="#">로열허니 착한</a></li>
+                            <li class="sub-column-item"><a href="#">수분베리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sub-category">
+                    <li class="sub-column">유형별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">베이스 메이크업</a></li>
+                            <li class="sub-column-item"><a href="#">컬러 메이크업</a></li>
+                            <li class="sub-column-item"><a href="#">네일</a></li>
+                            <li class="sub-column-item"><a href="#">화장소품</a></li>
+                            <li class="sub-column-item"><a href="#">세트상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">푸드라인업
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">로열허니</a></li>
+                            <li class="sub-column-item"><a href="#">토마토</a></li>
+                            <li class="sub-column-item"><a href="#">초콜릿</a></li>
+                            <li class="sub-column-item"><a href="#">청포도</a></li>
+                            <li class="sub-column-item"><a href="#">피치 코튼</a></li>
+                            <li class="sub-column-item"><a href="#">미네랄</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sub-category">
+                    <li class="sub-column">유형별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">바디</a></li>
+                            <li class="sub-column-item"><a href="#">헤어</a></li>
+                            <li class="sub-column-item"><a href="#">베이비</a></li>
+                            <li class="sub-column-item"><a href="#">세트상품</a></li>
+                            <li class="sub-column-item"><a href="#">방향</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">피부고민별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">각질</a></li>
+                            <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                            <li class="sub-column-item"><a href="#">다크서클</a></li>
+                            <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                            <li class="sub-column-item"><a href="#">민감</a></li>
+                            <li class="sub-column-item"><a href="#">보습</a></li>
+                            <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                            <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                            <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                            <li class="sub-column-item"><a href="#">피부결</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">푸드라인업
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">밀크</a></li>
+                            <li class="sub-column-item"><a href="#">시어버터</a></li>
+                            <li class="sub-column-item"><a href="#">레몬 버베나</a></li>
+                            <li class="sub-column-item"><a href="#">포도씨 오일</a></li>
+                            <li class="sub-column-item"><a href="#">허니</a></li>
+                            <li class="sub-column-item"><a href="#">아르간오일</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sub-category">
+                    <li class="sub-column">유형별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">쉐이빙/클렌징</a></li>
+                            <li class="sub-column-item"><a href="#">팩/마스크</a></li>
+                            <li class="sub-column-item"><a href="#">토너</a></li>
+                            <li class="sub-column-item"><a href="#">에멀전</a></li>
+                            <li class="sub-column-item"><a href="#">플루이드</a></li>
+                            <li class="sub-column-item"><a href="#">에센스/크림</a></li>
+                            <li class="sub-column-item"><a href="#">메이크업/크림</a></li>
+                            <li class="sub-column-item"><a href="#">세트상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">피부고민별
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">각질</a></li>
+                            <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                            <li class="sub-column-item"><a href="#">다크서클</a></li>
+                            <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                            <li class="sub-column-item"><a href="#">민감</a></li>
+                            <li class="sub-column-item"><a href="#">보습</a></li>
+                            <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                            <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                            <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                            <li class="sub-column-item"><a href="#">피부결</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-column">푸드라인업
+                        <ul class="sub-column-item-wrap">
+                            <li class="sub-column-item"><a href="#">블랙슈가</a></li>
+                            <li class="sub-column-item"><a href="#">티트리</a></li>
+                            <li class="sub-column-item"><a href="#">자작나무수액</a></li>
+                            <li class="sub-column-item"><a href="#">복분자</a></li>
+                            <li class="sub-column-item"><a href="#">수분베리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sub-category">
+                    <li class="sub-column-item"><a href="#">멤버십</a></li>
+                    <li class="sub-column-item"><a href="#">공지사항</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid story-title">
+            SKIN FOOD<br />
+            <strong>브랜드 스토리</strong>
+        </div>
+        <div class="container">
+            <article class="row story-article knowhow" data-aos="fade-up">
+                <div class="col-md-6 knowhow text-center">
+                    <div class="story-pic-wrap"><img class="col-xl-8 col-md-10" src="img/story/knowhow/knowhow-1.png" alt="knowhow-1" /></div>
+                    <div class="knowhow-title-wrap">
+                        <div class="knowhow-title">59년의 노하우를 담은 화장품</div>
+                        <div class="title-bg"></div>
+                    </div>
+                    <div class="knowhow-text">
+                        스킨푸드의 로고에는 'Since 1957'이라는 역사가 담겨 있습니다.<br />
+                        이는 스킨푸드의 모기업이자, 자회사인 아이피어리스 연구소의 노하우를 담아 탄생한
+                        스킨푸드 제품의 우수성을 상징합니다.<br />
+                        항상 최신의 트렌드와 신기술을 도입하면서도, 화장품 전문 기업다운 노하우와 긍지를 담고 있는 기업이 바로
+                        스킨푸드입니다.
+                    </div>
+                </div>
+                <div class="col-md-6 knowhow text-center">
+                    <div class="knowhow-title-wrap f_right">
+                        <div class="knowhow-title">피부에 좋은 푸드로 만든 화장품 SKINFOOD</div>
+                        <div class="title-bg"></div>
+                    </div>
+                    <div class="knowhow-text f_right">
+                        스킨푸드는 “Skin + Food”에서 유래한 “피부에 좋은 푸드” 라는 네이밍의 의미에서 출발하여
+                        '맛있는 푸드로 만든 맛있는 화장품' 이라는 모토와 함께 ‘푸드’라는 차별적이고 독특한 컨셉을 담아 탄생한 최초의 푸드 코스메틱 브랜드입니다.<br />
+                        피부에 와닿는 것이기에, 보다 좋은 푸드를 통해 보다 더 아름답고 건강한 라이프스타일을 누리실 수 있도록 언제나 노력하고 있습니다.
+                    </div>
+                    <div class="story-pic-wrap"><img class="col-xl-10 col-md-10 col-xs-10" src="img/story/knowhow/knowhow-2.png" alt="knowhow-2" /></div>
+                </div>
+            </article>
+            <article class="row story-article lifestyle" data-aos="fade-up">
+                <div class="row container-fluid lifestyle-title-wrap">
+                    <div class="lifestyle-title">
+                        <h3>FOOD &amp; BEAUTY LIFESTYLE BRAND</h3>
+                        <div class="title-bg"></div>
+                    </div>
+                    <div class="lifestyle-sub-title">
+                        끝없는 호기심과 즐거운 상상력으로 당신의 일상을 상큼한 에너지로 가득 채워 주는<br />
+                        메리 푸드 &amp; 뷰티 라이프 스타일 브랜드
+                    </div>
+                </div>
+                <div class="row lifestyle-item-wrap">
+                    <div class="col-md-4 lifestyle-item" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="lifestyle-item-title">BEAUTY FOOD INGREDIENT</div>
+                        <div class="lifestyle-item-pic"><img src="img/story/lifestyle/lifestyle-1.png" alt="life-pic-1" /></div>
+                        <div class="lifestyle-item-text">
+                            달콤한 흑설탕, 아보카도, 로열허니, 상추와 오이,
+                            유자 등 <b>1,000여가지 피부에 좋은 푸드</b>를
+                            원료로 만든 독특한 화장품
+                        </div>
+                    </div>
+                    <div class="col-md-4 lifestyle-item" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="lifestyle-item-title">CHEERFUL ENERGY</div>
+                        <div class="lifestyle-item-pic"><img src="img/story/lifestyle/lifestyle-2.png" alt="life-pic-2" /></div>
+                        <div class="lifestyle-item-text">
+                            스킨푸드만의 <b>메리 푸드&amp;뷰티 라이프 스타일</b>로
+                            일상의 상큼한 에너지로 가득
+                        </div>
+                    </div>
+                    <div class="col-md-4 lifestyle-item" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="lifestyle-item-title">CREATIVE CURIOS</div>
+                        <div class="lifestyle-item-pic"><img src="img/story/lifestyle/lifestyle-3.png" alt="life-pic-3" /></div>
+                        <div class="lifestyle-item-text">
+                            푸드의 신선함과 영양을 그대로 담은
+                            뷰티케어로서, <b>제품의 용기, 향기, 텍스쳐까지 푸드
+                                컨셉 적용</b>, 끝없는 호기심으로 즐거운 상상력 창출
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="row story-article" data-aos="fade-up">
+                <div class="story-in-title">BETTER FOOD</div>
+                <div class="col-md-6 col-sm-12 story-pic-wrap story-left-side" data-aos="fade-right">
+                    <img src="img/story/food.png" alt="food-img" />
+                    <div class="pic-bg pic-bg-1 d-none d-md-block"></div>
+                </div>
+                <div class="col-md-6 col-sm-12 story-right-side rs" data-aos="fade-left">
+                    <div class="col-md-12 story-text-wrap">
+                        건강한 푸드 속에는 피부를 아름답게 만드는 놀라운 능력이 있다는 믿음으로<br />
+                        스킨푸드는 보다 좋은 푸드를 찾기 위해 수많은 노력을 하고 있습니다.<br />
+
+                        풍부한 미네랄을 자랑하는 브라질 흑설탕, 아시아 남쪽 청정지역의 로열블랙허니,<br />
+                        프랑스 부르고뉴 포도, 세계3대 광천수인 초정리 광천수,<br /><br />
+                        착한 농장에서 건강하게 자란 토마토, 상추, 그리고 오이까지<br />
+
+                        스킨푸드는 피부에 좋은 건강한 푸드를 찾기 위해 세계 곳곳의 푸드박람회는 꼭 챙겨 가고,<br />
+                        피부에 좋은 신선한 푸드를 구하기 위해 자연친화적인 방법으로<br />
+                        푸드를 재배하는 농부들을 만나러 전국을 누비기도 합니다.<br />
+                        당신이 좋아하는 푸드를 당신의 피부가 좋아할 수 있도록<br />
+                        더 좋은 푸드를 찾기 위한 스킨푸드의 여정은 오늘도 계속됩니다.<br />
+                    </div>
+                </div>
+            </article>
+            <article class="row story-article" data-aos="fade-up">
+                <div class="story-in-title">BETTER BEAUTY</div>
+                <div class="col-md-6 story-left-side ls" data-aos="fade-right">
+                    <div class="col-md-12 story-text-wrap">
+                        스킨푸드는 푸드 속에 아름다움이 있음을 믿고<br />
+                        조금 느리더라도 바르게 가고자 노력합니다.<br />
+                        14일 만에 좋아지는 피부보다 14년 후에도 아름다운 피부,<br />
+                        이것이 스킨푸드가 여러분께 드리고자 하는 마음입니다.<br /><br />
+
+                        유기산이 풍부한 과일 성분으로 피부에 수분과 영양공급을 듬뿍,<br />
+                        몸에 좋은 10가지 푸드에서 찾아낸 성분으로 10가지 피부고민을 한번에,<br />
+                        골드 키위 껍질에서 찾은 성분으로 피부를 투명하게<br /><br />
+
+                        이러한 마음으로 수많은 푸드를 직접 먹어보고, 발라보고, 공부하며<br />
+                        피부에 좋은 스킨푸드만의 독자적인 성분을 탄생시킵니다.<br />
+                        피부에 와닿는 푸드를 끊임없이 연구하는 스킨푸드!<br />
+                        아름다운 피부를 위해 꼭 필요한 푸드 뷰티의 힘을 전해드리겠습니다.
+                    </div>
+                </div>
+                <div class="col-md-6 story-pic-wrap story-right-side" data-aos="fade-left">
+                    <img src="img/story/beauty.png" alt="food-img" />
+                    <div class="pic-bg pic-bg-2 d-none d-md-block"></div>
+                </div>
+            </article>
+            <article class="row story-article" data-aos="fade-up">
+                <div class="story-in-title">BETTER HEALTHY</div>
+                <div class="col-md-6 story-pic-wrap story-left-side" data-aos="fade-right">
+                    <img src="img/story/healthy.png" alt="food-img" />
+                    <div class="pic-bg pic-bg-3 d-none d-md-block"></div>
+                </div>
+                <div class="col-md-6 story-right-side rs" data-aos="fade-left">
+                    <div class="col-md-12 story-text-wrap">
+                        스킨푸드는 아름다운 피부를 만드는 데에만 머무르지 않습니다.<br />
+                        아름다움은 물론, 그 이상의 건강한 라이프스타일을 응원합니다.<br /><br />
+
+                        타인의 시선에 얽매이기 보다 진정 자신을 사랑하며 돌볼 줄 아는,<br />
+                        조금은 느려도 자연 그대로의 푸드를 즐기려는 철학을 갖고 있는,<br />
+                        주변환경과 사람들을 진심을 담아 사랑하고 존중할 줄 아는,<br />
+                        좋은 푸드를 먹고 좋은 푸드를 이웃과 함께 나누는,<br />
+                        그녀의 라이프스타일에 스킨푸드의 건강한 철학이 더해질 수 있도록!<br /><br />
+
+                        건강한 피부로부터 전해지는 당당한 표정,우아한 매너, 그리고 생기 넘치는 삶까지<br />
+                        아름답고 건강한 피부를 위한 스킨푸드만의 푸드스토리로<br />
+                        피부에 와닿는 Food &amp; Beauty Lifestyle Brand가 되겠습니다.<br /><br />
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="scroll-480">
+            <ul class="footer-menu">
+                <li class="footer-menu-top"><a href="#">개인정보 처리방침</a></li>
+                <li class="footer-menu-top"><a href="#">이용약관</a></li>
+                <li class="footer-menu-top"><a href="#">공지사항</a></li>
+                <li class="footer-menu-top"><a href="#">매장개설 문의</a></li>
+                <li class="footer-menu-top"><a href="#">제휴문의</a></li>
+                <li class="footer-menu-top"><a href="#">본사 오시는길</a></li>
+                <li class="footer-menu-top"><a href="#">US</a></li>
+                <li class="footer-menu-top"><a href="#">China</a></li>
+            </ul>
+        </div>
+        <div class="footer-button-wrap">
+            <div class="footer-but"><a href="https://www.facebook.com/theskinfood.kr" target="_blank"><img src="img/footer/footer-but-1.png" alt="footer-but" /></a></div>
+            <div class="footer-but"><a href="https://www.youtube.com/channel/UCKyIfDxlcdTBhUzv_RsuR-g" target="_blank"><img src="img/footer/footer-but-2.png" alt="footer-but" /></a></div>
+            <div class="footer-but"><a href="https://instagram.com/skinfood_official" target="_blank"><img src="img/footer/footer-but-3.png" alt="footer-but" /></a></div>
+        </div>
+        <div class="footer-con-wrap">
+            <div class="footer-con">
+                <div class="footer-con-title">
+                    <div class="footer-con-txt">공지사항 <b>▼</b></div>
+                    <div class="notice-more"><a href="#">더보기 ></a></div>
+                </div>
+                <div class="footer-con-item-wrap f-480">
+                    <div class="notice-item"><a href="#">기준일 및 주주명부 폐쇄기간 설정 ...</a></div>
+                    <div class="notice-item"><a href="#">스킨푸드 개인정보 취급방침 및 이...</a></div>
+                    <div class="notice-item"><a href="#">[공지] 5월 고객 상담실 안내</a></div>
+                    <div class="notice-item"><a href="#">[당첨자발표] 명동점 오픈 이벤트...</a></div>
+                    <div class="notice-item"><a href="#">[스킨푸드] 2019년 결산공고</a></div>
+                </div>
+            </div>
+            <div class="footer-con">
+                <div class="footer-con-title">
+                    <div class="footer-con-txt">고객 상담실 <b>▼</b></div>
+                </div>
+                <div class="footer-con-item-wrap f-480">
+                    <div class="footer-con-item">
+                        <b>평일&nbsp;&nbsp;</b>am 09:00 ~ pm 17:30<br />
+                        <b>점심시간&nbsp;&nbsp;</b>am 11:30 ~ pm 12:30<br /><br />
+                    </div>
+                    <div class="footer-con-item">
+                        주말 및 공휴일은 1:1 문의를 이용하세요
+                        <div class="consul_but"><a href="#"><b>1:1문의 ></b></a></div>
+                    </div>
+                    <div class="footer-con-item"><br /><b>080-012-7878</b><br /></div>
+                    <div class="footer-con-item"><br /><b>For overseas business inquiries: overseas@theskinfood.com</b></div>
+                    <div class="footer-con-item"><b>+82-2-3487-8887</b></div>
+                </div>
+            </div>
+            <div class="footer-con">
+                <div class="footer-con-title">
+                    <div class="footer-con-txt footer-logo"><img src="img/footer/footer-logo.png" alt="footer-logo" /></div>
+                </div>
+                <div class="footer-con-item-wrap footer-on">
+                    <div class="footer-con-item"><b>상호</b> : (주)스킨푸드 ㅣ 대표이사 유근직 <br /> Tel : 02-597-4191 ㅣ Fax : 02-597-4199</div>
+                    <div class="footer-con-item"><b>주소</b> : 경기도 안성시 미양면 계륵리 267-4 스킨푸드</div>
+                    <div class="footer-con-item"><b>사업자등록번호</b> : 125-81-54503</div>
+                    <div class="footer-con-item"><b>통신사업자번호</b> : 제2005-50호</div>
+                    <div class="footer-con-item"><b>제휴문의</b> : webmaster@theskinfood.com</div>
+                    <div class="footer-con-item"><b>호스팅 사업자</b> : 영우디지탈</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

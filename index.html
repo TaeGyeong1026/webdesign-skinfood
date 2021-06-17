@@ -1,0 +1,1351 @@
+<!doctype html>
+
+<html lang="ko">
+	<head>
+		<title>맛있는 화장품 - 스킨푸드</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/main.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+		<link href="css/common.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<link href="css/1194.css" rel="stylesheet" type="text/css" />
+		<link href="css/1024.css" rel="stylesheet" type="text/css" />
+		<link href="css/768.css" rel="stylesheet" type="text/css" />
+		<link href="css/480.css" rel="stylesheet" type="text/css" />
+		<link href="css/mobile.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+        <div class="ad-banner">
+            신규회원 특별혜택 20% WELCOME COUPON 증정 !!
+            <div id="ad-close"><img src="img/ad-close.png" alt="ad-close"/></div>
+        </div>
+        <div class="goto-top">
+            <img class="goto-top-arr on" src="img/top-but.png" alt="goto-top" />
+            <img class="goto-top-arr" src="img/top-but-dark.png" alt="goto-top-dark"/>
+            TOP
+        </div>
+        <div class="mode-btn-wrap">
+            <img class="mode-btn on" src="img/dark-mode-bt.png" alt="dark-mode-button"/>
+            <img class="mode-btn" src="img/light-mode-bt.png" alt="light-mode-button"/>
+        </div>
+        <header>
+            <div class="container">
+                <ul class="header-button-wrap-1">
+                    <li class="header-but"><a href="#">멤버십</a></li>
+                    <li class="header-but"><a href="#">공지사항</a></li>
+                    <li class="header-but"><a href="#">고객센터</a></li>
+                </ul>
+                <div class="header-logo">
+                    <a class="header-logo-img on" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+                    <a class="header-logo-img" href="index.html"><img src="img/logo-dark.png" alt="logo" /></a>                    
+                </div>
+                <ul class="header-button-wrap-2">
+                    <li class="header-but"><a href="#">로그인</a></li>
+                    <li class="header-but"><a href="#">회원가입</a></li>
+                    <li class="header-but"><a href="#">주문/배송조회</a></li>
+                    <li class="header-but"><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="burger-but">
+                <div class="burger-bar" id="burger-1"></div>
+                <div class="burger-bar" id="burger-2"></div>
+                <div class="burger-bar" id="burger-3"></div>
+            </div>
+            <div class="mobile-menu">
+                <div class="m-menu-top">
+                    <div class="m-menu-top-but"><a href="#">로그인</a></div>
+                    <div class="m-menu-top-but"><a href="#">회원가입</a></div>
+                </div>
+                <div class="m-menu-sub-wrap">
+                    <ul class="m-menu-sub-in">
+                        <li class="m-menu-sub-top"><a href="#">멤버십</a></li>
+                        <li class="m-menu-sub-top"><a href="#">고객센터</a></li>
+                        <li class="m-menu-sub-top"><a href="#">공지사항</a></li>
+                        <li class="m-menu-sub-top"><a href="#">주문/배송조회</a></li>
+                        <li class="m-menu-sub-top"><a href="#">장바구니</a></li>
+                    </ul>
+                </div>
+                <div class="m-menu-in-wrap">
+                    <div class="m-menu-wrap">
+                        <ul class="m-menu">
+                            <li class="m-menu-sub but-on"><a href="#">BRAND</a></li>
+                            <li class="m-menu-sub"><a href="#">NEW PRODUCT</a></li>
+                            <li class="m-menu-sub"><a href="#">SKINCARE</a></li>
+                            <li class="m-menu-sub"><a href="#">MAKE UP</a></li>
+                            <li class="m-menu-sub"><a href="#">BODY&#8226;HAIR</a></li>
+                            <li class="m-menu-sub"><a href="#">MEN</a></li>
+                            <li class="m-menu-sub"><a href="#">COMMUNITY</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-menu-con-wrap">
+                        <ul class="m-menu-con-main con-on">
+                            <li class="m-menu-con-title">BRAND
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="story.html">브랜드 스토리</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">스킨푸드 소식</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">스킨푸드 활동</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">푸드 마니아</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">글로벌 스킨푸드</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">매장안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="m-menu-con-main">
+                            <li class="m-menu-con-title">유형별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">클렌징</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">팩/마스크</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">토너</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">아이케어</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">에센스/세럼</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">오일/밤</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">에멀전</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">크림</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">선케어</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">미스트</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">세트상품</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">피부고민별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">푸드라인업
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">블랙슈가</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">수분포도</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">로열허니</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">피치 코튼</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">유자</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">골드 캐비어</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">토마토</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">상추오이</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">아보카도</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">흑석류</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">흰민들레</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">복분자</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">로열허니 착한</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">수분베리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="m-menu-con-main">
+                            <li class="m-menu-con-title">유형별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">클렌징</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">팩/마스크</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">토너</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">아이케어</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">에센스/세럼</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">오일/밤</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">에멀전</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">크림</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">선케어</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">미스트</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">세트상품</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">피부고민별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">푸드라인업
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">블랙슈가</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">수분포도</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">로열허니</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">피치 코튼</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">유자</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">골드 캐비어</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">토마토</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">상추오이</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">아보카도</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">흑석류</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">흰민들레</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">복분자</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">로열허니 착한</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">수분베리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="m-menu-con-main">
+                            <li class="m-menu-con-title">유형별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">베이스 메이크업</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">컬러 메이크업</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">네일</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">화장소품</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">세트상품</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">푸드라인업
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">로열허니</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">토마토</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">초콜릿</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">청포도</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">피치 코튼</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">미네랄</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="m-menu-con-main">
+                            <li class="m-menu-con-title">유형별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">바디</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">헤어</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">베이비</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">세트상품</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">방향</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">피부고민별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">푸드라인업
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">밀크</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">시어버터</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">레몬 버베나</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">포도씨 오일</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">허니</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">아르간오일</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="m-menu-con-main">
+                            <li class="m-menu-con-title">유형별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">쉐이빙/클렌징</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">팩/마스크</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">토너</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">에멀전</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">플루이드</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">에센스/크림</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">메이크업/크림</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">세트상품</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">피부고민별
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">각질</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">다크서클</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">모공/피지</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">민감</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">보습</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">수분/진정</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">탄력/피부노화</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">트러블/여드름</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">피부결</a></li>
+                                </ul>
+                            </li>
+                            <li class="m-menu-con-title">푸드라인업
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">블랙슈가</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">티트리</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">자작나무수액</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">복분자</a></li>
+                                    <li class="m-menu-con-sub-in"><a href="#">수분베리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="m-menu-con-main">
+                            <li class="m-menu-con-title">BRAND
+                                <ul class="m-menu-con-sub">
+                                    <li class="m-menu-con-sub-in"><a href="#">공지사항</a></li>
+                                    <li class="m-menu-con-sub-in even-sub"><a href="#">멤버십</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li class="top"><a href="#">BRAND</a></li>
+                <li class="top"><a href="#">NEW PRODUCT</a></li>
+                <li class="top"><a href="#">SKINCARE</a></li>
+                <li class="top"><a href="#">MAKE UP</a></li>
+                <li class="top"><a href="#">BODY&#8226;HAIR</a></li>
+                <li class="top"><a href="#">MEN</a></li>
+                <li class="top"><a href="#">COMMUNITY</a></li>
+            </ul>
+            <div class="sub-menu-wrap">
+                <div class="sub-menu-position">
+                    <ul class="sub-category">
+                        <li class="sub-column-item"><a href="story.html">브랜드 스토리</a></li>
+                        <li class="sub-column-item"><a href="#">스킨푸드 소식</a></li>
+                        <li class="sub-column-item"><a href="#">수킨푸드 활동</a></li>
+                        <li class="sub-column-item"><a href="#">푸드 마니아</a></li>
+                        <li class="sub-column-item"><a href="#">글로벌 스킨푸드</a></li>
+                        <li class="sub-column-item"><a href="#">매장안내</a></li>
+                    </ul>
+                    <ul class="sub-category">
+                        <li class="sub-column">유형별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">클렌징</a></li>
+                                <li class="sub-column-item"><a href="#">팩/마스크</a></li>
+                                <li class="sub-column-item"><a href="#">토너</a></li>
+                                <li class="sub-column-item"><a href="#">아이케어</a></li>
+                                <li class="sub-column-item"><a href="#">에센스/세럼</a></li>
+                                <li class="sub-column-item"><a href="#">오일/밤</a></li>
+                                <li class="sub-column-item"><a href="#">에멀전</a></li>
+                                <li class="sub-column-item"><a href="#">크림</a></li>
+                                <li class="sub-column-item"><a href="#">선케어</a></li>
+                                <li class="sub-column-item"><a href="#">미스트</a></li>
+                                <li class="sub-column-item"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">피부고민별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">각질</a></li>
+                                <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="sub-column-item"><a href="#">다크서클</a></li>
+                                <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                                <li class="sub-column-item"><a href="#">민감</a></li>
+                                <li class="sub-column-item"><a href="#">보습</a></li>
+                                <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                                <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                                <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                                <li class="sub-column-item"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">푸드라인업
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">블랙슈가</a></li>
+                                <li class="sub-column-item"><a href="#">수분포도</a></li>
+                                <li class="sub-column-item"><a href="#">로열허니</a></li>
+                                <li class="sub-column-item"><a href="#">피치 코튼</a></li>
+                                <li class="sub-column-item"><a href="#">유자</a></li>
+                                <li class="sub-column-item"><a href="#">골드 캐비어</a></li>
+                                <li class="sub-column-item"><a href="#">토마토</a></li>
+                                <li class="sub-column-item"><a href="#">상추오이</a></li>
+                                <li class="sub-column-item"><a href="#">아보카도</a></li>
+                                <li class="sub-column-item"><a href="#">흑석류</a></li>
+                                <li class="sub-column-item"><a href="#">흰민들레</a></li>
+                                <li class="sub-column-item"><a href="#">복분자</a></li>
+                                <li class="sub-column-item"><a href="#">로열허니 착한</a></li>
+                                <li class="sub-column-item"><a href="#">수분베리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-category">
+                        <li class="sub-column">유형별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">클렌징</a></li>
+                                <li class="sub-column-item"><a href="#">팩/마스크</a></li>
+                                <li class="sub-column-item"><a href="#">토너</a></li>
+                                <li class="sub-column-item"><a href="#">아이케어</a></li>
+                                <li class="sub-column-item"><a href="#">에센스/세럼</a></li>
+                                <li class="sub-column-item"><a href="#">오일/밤</a></li>
+                                <li class="sub-column-item"><a href="#">에멀전</a></li>
+                                <li class="sub-column-item"><a href="#">크림</a></li>
+                                <li class="sub-column-item"><a href="#">선케어</a></li>
+                                <li class="sub-column-item"><a href="#">미스트</a></li>
+                                <li class="sub-column-item"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">피부고민별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">각질</a></li>
+                                <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="sub-column-item"><a href="#">다크서클</a></li>
+                                <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                                <li class="sub-column-item"><a href="#">민감</a></li>
+                                <li class="sub-column-item"><a href="#">보습</a></li>
+                                <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                                <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                                <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                                <li class="sub-column-item"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">푸드라인업
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">블랙슈가</a></li>
+                                <li class="sub-column-item"><a href="#">수분포도</a></li>
+                                <li class="sub-column-item"><a href="#">로열허니</a></li>
+                                <li class="sub-column-item"><a href="#">피치 코튼</a></li>
+                                <li class="sub-column-item"><a href="#">유자</a></li>
+                                <li class="sub-column-item"><a href="#">골드 캐비어</a></li>
+                                <li class="sub-column-item"><a href="#">토마토</a></li>
+                                <li class="sub-column-item"><a href="#">상추오이</a></li>
+                                <li class="sub-column-item"><a href="#">아보카도</a></li>
+                                <li class="sub-column-item"><a href="#">흑석류</a></li>
+                                <li class="sub-column-item"><a href="#">흰민들레</a></li>
+                                <li class="sub-column-item"><a href="#">복분자</a></li>
+                                <li class="sub-column-item"><a href="#">로열허니 착한</a></li>
+                                <li class="sub-column-item"><a href="#">수분베리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-category">
+                        <li class="sub-column">유형별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">베이스 메이크업</a></li>
+                                <li class="sub-column-item"><a href="#">컬러 메이크업</a></li>
+                                <li class="sub-column-item"><a href="#">네일</a></li>
+                                <li class="sub-column-item"><a href="#">화장소품</a></li>
+                                <li class="sub-column-item"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">푸드라인업
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">로열허니</a></li>
+                                <li class="sub-column-item"><a href="#">토마토</a></li>
+                                <li class="sub-column-item"><a href="#">초콜릿</a></li>
+                                <li class="sub-column-item"><a href="#">청포도</a></li>
+                                <li class="sub-column-item"><a href="#">피치 코튼</a></li>
+                                <li class="sub-column-item"><a href="#">미네랄</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-category">
+                        <li class="sub-column">유형별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">바디</a></li>
+                                <li class="sub-column-item"><a href="#">헤어</a></li>
+                                <li class="sub-column-item"><a href="#">베이비</a></li>
+                                <li class="sub-column-item"><a href="#">세트상품</a></li>
+                                <li class="sub-column-item"><a href="#">방향</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">피부고민별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">각질</a></li>
+                                <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="sub-column-item"><a href="#">다크서클</a></li>
+                                <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                                <li class="sub-column-item"><a href="#">민감</a></li>
+                                <li class="sub-column-item"><a href="#">보습</a></li>
+                                <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                                <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                                <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                                <li class="sub-column-item"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">푸드라인업
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">밀크</a></li>
+                                <li class="sub-column-item"><a href="#">시어버터</a></li>
+                                <li class="sub-column-item"><a href="#">레몬 버베나</a></li>
+                                <li class="sub-column-item"><a href="#">포도씨 오일</a></li>
+                                <li class="sub-column-item"><a href="#">허니</a></li>
+                                <li class="sub-column-item"><a href="#">아르간오일</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-category">
+                        <li class="sub-column">유형별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">쉐이빙/클렌징</a></li>
+                                <li class="sub-column-item"><a href="#">팩/마스크</a></li>
+                                <li class="sub-column-item"><a href="#">토너</a></li>
+                                <li class="sub-column-item"><a href="#">에멀전</a></li>
+                                <li class="sub-column-item"><a href="#">플루이드</a></li>
+                                <li class="sub-column-item"><a href="#">에센스/크림</a></li>
+                                <li class="sub-column-item"><a href="#">메이크업/크림</a></li>
+                                <li class="sub-column-item"><a href="#">세트상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">피부고민별
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">각질</a></li>
+                                <li class="sub-column-item"><a href="#">기미/잡티/칙칙한안색</a></li>
+                                <li class="sub-column-item"><a href="#">다크서클</a></li>
+                                <li class="sub-column-item"><a href="#">모공/피지</a></li>
+                                <li class="sub-column-item"><a href="#">민감</a></li>
+                                <li class="sub-column-item"><a href="#">보습</a></li>
+                                <li class="sub-column-item"><a href="#">수분/진정</a></li>
+                                <li class="sub-column-item"><a href="#">탄력/피부노화</a></li>
+                                <li class="sub-column-item"><a href="#">트러블/여드름</a></li>
+                                <li class="sub-column-item"><a href="#">피부결</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-column">푸드라인업
+                            <ul class="sub-column-item-wrap">
+                                <li class="sub-column-item"><a href="#">블랙슈가</a></li>
+                                <li class="sub-column-item"><a href="#">티트리</a></li>
+                                <li class="sub-column-item"><a href="#">자작나무수액</a></li>
+                                <li class="sub-column-item"><a href="#">복분자</a></li>
+                                <li class="sub-column-item"><a href="#">수분베리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-category">
+                        <li class="sub-column-item"><a href="#">멤버십</a></li>
+                        <li class="sub-column-item"><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <article class="main-banner">
+                <div class="banner-mask">
+                    <div class="banner-item-wrap">
+                        <div class="banner-item"><a href="#"><img id="m-banner-item1" src="img/banner/banner1.png" alt="banner" /></a></div>
+                        <div class="banner-item"><a href="#"><img id="m-banner-item2" src="img/banner/banner2.png" alt="banner" /></a></div>
+                        <div class="banner-item"><a href="#"><img id="m-banner-item3" src="img/banner/banner3.png" alt="banner" /></a></div>
+                        <div class="banner-item"><a href="#"><img id="m-banner-item4" src="img/banner/banner4.png" alt="banner" /></a></div>
+                    </div>
+                </div>
+                <div class="banner-index-wrap">
+                    <div id="banner-left">&lt;</div>
+                    <div id="banner-index">1</div>&nbsp;/ 4
+                    <div id="banner-right">&gt;</div>
+                </div>
+            </article>
+            <div class="search">
+                <div class="search-position">
+                    <div class="search-txt">SEARCH</div>
+                    <input class="search-box" type="search" />
+                    <a href="#"><div class="search-but">
+                        <img class="search-img on" src="img/search-but.png" alt="search-but" />
+                        <img class="search-img" src="img/search-but-dark.png" alt="search-but-dark"/>
+                    </div></a>
+                </div>
+            </div>
+            <article class="MD">
+                <div class="article-position">
+                    <div class="category-top-wrap">
+                        <div class="category-title">MD's CHOICE</div>
+                        <div class="category-more"><a href="#">더보기 ></a></div>
+                    </div>
+                    <div class="item-mask">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">스킨푸드 썸머 키트</div>
+                                    <div class="item-price"><del>9,000</del><br/><b>30%</b> ￦ 6,300</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">캐롯 카로틴 릴리프 크림</div>
+                                    <div class="item-price"><del>30,000</del><br/><b>30%</b> ￦ 21,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">캐롯 카로틴 카밍 워터 패드</div>
+                                    <div class="item-price"><del>26,000</del><br/><b>30%</b> ￦ 18,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">버터리치크케이크</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">유자씨잡티맑음에센스+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>34,000</del><br/><b>20%</b> ￦ 27,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">밀크쉐이크 포인트 메이크업 리무버</div>
+                                    <div class="item-price"><del>8,900</del><br/><b>20%</b> ￦ 7,120</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">7</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/7.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 착한 토너</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">8</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/8.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 착한 에멀전</div>
+                                    <div class="item-price">￦ 15,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">9</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/9.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">상추오이 워터리 토너</div>
+                                    <div class="item-price"><del>14,000</del><br/><b>20%</b> ￦ 11,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">10</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/10.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 퍼펙트 첫세럼 더 마일드</div>
+                                    <div class="item-price">￦ 27,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-mask w-480">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">스킨푸드 썸머 키트</div>
+                                    <div class="item-price"><del>9,000</del><br/><b>30%</b> ￦ 6,300</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">캐롯 카로틴 릴리프 크림</div>
+                                    <div class="item-price"><del>30,000</del><br/><b>30%</b> ￦ 21,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">캐롯 카로틴 카밍 워터 패드</div>
+                                    <div class="item-price"><del>26,000</del><br/><b>30%</b> ￦ 18,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">버터리치크케이크</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">유자씨잡티맑음에센스+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>34,000</del><br/><b>20%</b> ￦ 27,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">밀크쉐이크 포인트 메이크업 리무버</div>
+                                    <div class="item-price"><del>8,900</del><br/><b>20%</b> ￦ 7,120</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">7</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/7.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 착한 토너</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">8</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/8.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 착한 에멀전</div>
+                                    <div class="item-price">￦ 15,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">9</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/9.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">상추오이 워터리 토너</div>
+                                    <div class="item-price"><del>14,000</del><br/><b>20%</b> ￦ 11,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">10</div>
+                                    <div class="item-pic"><a href="#"><img src="img/MD/10.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 퍼펙트 첫세럼 더 마일드</div>
+                                    <div class="item-price">￦ 27,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-arrow-wrap">
+                    <div class="item-left">
+                        <img class="item-arr on" src="img/item-left.png" alt="left" />
+                        <img class="item-arr" src="img/item-left-dark.png" alt="left-dark" />
+                    </div>
+                    <div class="item-right">
+                        <img class="item-arr on" src="img/item-right.png" alt="right" />
+                        <img class="item-arr" src="img/item-right-dark.png" alt="right-dark" />
+                    </div>
+                </div>
+            </article>
+            <article class="skin">
+                <div class="article-position">
+                    <div class="category-top-wrap">
+                        <div class="category-title">SKIN CARE CATEGORY BEST</div>
+                        <div class="category-more"><a href="#">더보기 ></a></div>
+                    </div>
+                    <div class="item-mask">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">유자씨잡티맑음에센스+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>34,000</del><br/><b>20%</b> ￦ 27,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 프로폴리스 인리치 에센스</div>
+                                    <div class="item-price">￦ 32,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">유자C 잡티 맑음 톤업 크림 SPF50+ PA++++</div>
+                                    <div class="item-price"><del>24,000</del><br/><b>30%</b> ￦ 16,800</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가퍼펙트첫세럼더에센셜+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>27,000</del><br/><b>10%</b> ￦ 24,300</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가퍼펙트에센셜스크럽2X+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>19,000</del><br/><b>20%</b> ￦ 15,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 착한 토너</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">7</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/7.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">상추오이 워터리 토너</div>
+                                    <div class="item-price"><del>14,000</del><br/><b>20%</b> ￦ 11,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">8</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/8.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">에그 화이트 퍼펙트 포어 클렌징 폼</div>
+                                    <div class="item-price">￦ 10,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">9</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/9.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">골드 캐비어 토너</div>
+                                    <div class="item-price"><del>24,000</del><br/><b>20%</b> ￦ 19,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">10</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/10.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">골드 캐비어 에멀전 [주름개선 기능성 화장품]</div>
+                                    <div class="item-price">￦ 25,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-mask w-480">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">유자씨잡티맑음에센스+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>34,000</del><br/><b>20%</b> ￦ 27,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 프로폴리스 인리치 에센스</div>
+                                    <div class="item-price">￦ 32,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">유자C 잡티 맑음 톤업 크림 SPF50+ PA++++</div>
+                                    <div class="item-price"><del>24,000</del><br/><b>30%</b> ￦ 16,800</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가퍼펙트첫세럼더에센셜+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>27,000</del><br/><b>10%</b> ￦ 24,300</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가퍼펙트에센셜스크럽2X+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>19,000</del><br/><b>20%</b> ￦ 15,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">로열허니 착한 토너</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">7</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/7.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">상추오이 워터리 토너</div>
+                                    <div class="item-price"><del>14,000</del><br/><b>20%</b> ￦ 11,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">8</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/8.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">에그 화이트 퍼펙트 포어 클렌징 폼</div>
+                                    <div class="item-price">￦ 10,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">9</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/9.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">골드 캐비어 토너</div>
+                                    <div class="item-price"><del>24,000</del><br/><b>20%</b> ￦ 19,200</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">10</div>
+                                    <div class="item-pic"><a href="#"><img src="img/skin/10.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">골드 캐비어 에멀전 [주름개선 기능성 화장품]</div>
+                                    <div class="item-price">￦ 25,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-arrow-wrap">
+                    <div class="item-left">
+                        <img class="item-arr on" src="img/item-left.png" alt="left" />
+                        <img class="item-arr" src="img/item-left-dark.png" alt="left-dark" />
+                    </div>
+                    <div class="item-right">
+                        <img class="item-arr on" src="img/item-right.png" alt="right" />
+                        <img class="item-arr" src="img/item-right-dark.png" alt="right-dark" />
+                    </div>
+                </div>
+            </article>
+            <article class="makeup">
+                <div class="article-position">
+                    <div class="category-top-wrap">
+                        <div class="category-title">MAKE UP CATEGORY BEST</div>
+                        <div class="category-more"><a href="#">더보기 ></a></div>
+                    </div>
+                    <div class="item-mask">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">버터리치크케이크+브러쉬 증정</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">피치뽀송블러쿠션 + 트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>20,000</del><br/><b>15%</b> ￦ 17,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">피치뽀송멀티피니시파우더(대)+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>13,000</del><br/><b>15%</b> ￦ 11,050</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">밀크쉐이크 포인트 메이크업 리무버</div>
+                                    <div class="item-price"><del>8,900</del><br/><b>20%</b> ￦ 7,120</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">초코 아이브로우 파우더케익</div>
+                                    <div class="item-price">￦ 6,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">비타컬러 코튼 립락커 CR01 살구퓨레</div>
+                                    <div class="item-price"><del>11,000</del><br/><b>20%</b> ￦ 8,800</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">7</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/7.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">초코 딥핑 마스카라</div>
+                                    <div class="item-price">￦ 7,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">8</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/8.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 새틴 파운데이션 SPF20 PA+</div>
+                                    <div class="item-price"><del>18,000</del><br/><b>20%</b> ￦ 14,400</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">9</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/9.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">허니 젤네일 03호 에그크림베이지</div>
+                                    <div class="item-price"><del>6,000</del><br/><b>20%</b> ￦ 4,800</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-mask w-480">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">버터리치크케이크+브러쉬 증정</div>
+                                    <div class="item-price"><del>15,000</del><br/><b>20%</b> ￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">피치뽀송블러쿠션 + 트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>20,000</del><br/><b>15%</b> ￦ 17,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">피치뽀송멀티피니시파우더(대)+트라이얼 키트 증정</div>
+                                    <div class="item-price"><del>13,000</del><br/><b>15%</b> ￦ 11,050</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">밀크쉐이크 포인트 메이크업 리무버</div>
+                                    <div class="item-price"><del>8,900</del><br/><b>20%</b> ￦ 7,120</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">초코 아이브로우 파우더케익</div>
+                                    <div class="item-price">￦ 6,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">비타컬러 코튼 립락커 CR01 살구퓨레</div>
+                                    <div class="item-price"><del>11,000</del><br/><b>20%</b> ￦ 8,800</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">7</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/7.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">초코 딥핑 마스카라</div>
+                                    <div class="item-price">￦ 7,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">8</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/8.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 새틴 파운데이션 SPF20 PA+</div>
+                                    <div class="item-price"><del>18,000</del><br/><b>20%</b> ￦ 14,400</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">9</div>
+                                    <div class="item-pic"><a href="#"><img src="img/makeup/9.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">허니 젤네일 03호 에그크림베이지</div>
+                                    <div class="item-price"><del>6,000</del><br/><b>20%</b> ￦ 4,800</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-arrow-wrap">
+                    <div class="item-left">
+                        <img class="item-arr on" src="img/item-left.png" alt="left" />
+                        <img class="item-arr" src="img/item-left-dark.png" alt="left-dark" />
+                    </div>
+                    <div class="item-right">
+                        <img class="item-arr on" src="img/item-right.png" alt="right" />
+                        <img class="item-arr" src="img/item-right-dark.png" alt="right-dark" />
+                    </div>
+                </div>               
+            </article>
+            <article class="food">
+                <div class="article-position">
+                    <div class="category-top-wrap">
+                        <div class="category-title" id="food-title">FOOD LINE-UP</div>
+                    </div>
+                    <div class="item-mask food-mask">
+                        <div class="food-wrap">
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/1.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/2.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/3.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/4.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/5.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/6.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/7.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/8.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/9.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/10.png" alt="food-item" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="item-pic"><img src="img/food/11.png" alt="food-item" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-arrow-wrap food-arr">
+                    <div id="food-left"><img src="img/item-left.png" alt="left" /></div>
+                    <div id="food-right"><img src="img/item-right.png" alt="right" /></div>
+                </div>
+            </article>
+            <article class="body-hair">
+                <div class="article-position">
+                    <div class="category-top-wrap">
+                        <div class="category-title">BODY / HAIR BEST</div>
+                        <div class="category-more"><a href="#">더보기 ></a></div>
+                    </div>
+                    <div class="item-mask">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">아르간 오일 실크 플러스 헤어 에센스</div>
+                                    <div class="item-price">￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">아르간 오일 실크 플러스 헤어 샴푸</div>
+                                    <div class="item-price">￦ 10,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">레몬 버베나 바디 워시</div>
+                                    <div class="item-price">￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">아르간 오일 실크 플러스 헤어 마스크팩</div>
+                                    <div class="item-price">￦ 10,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">시어버터 소프트 핸드 크림(애플망고)</div>
+                                    <div class="item-price">￦ 7,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">포도씨 오일 바디 로션</div>
+                                    <div class="item-price">￦ 12,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-mask w-480">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">아르간 오일 실크 플러스 헤어 에센스</div>
+                                    <div class="item-price">￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">아르간 오일 실크 플러스 헤어 샴푸</div>
+                                    <div class="item-price">￦ 10,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">레몬 버베나 바디 워시</div>
+                                    <div class="item-price">￦ 12,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">아르간 오일 실크 플러스 헤어 마스크팩</div>
+                                    <div class="item-price">￦ 10,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">5</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/5.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">시어버터 소프트 핸드 크림(애플망고)</div>
+                                    <div class="item-price">￦ 7,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">6</div>
+                                    <div class="item-pic"><a href="#"><img src="img/body_hair/6.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">포도씨 오일 바디 로션</div>
+                                    <div class="item-price">￦ 12,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-arrow-wrap">
+                    <div class="item-left">
+                        <img class="item-arr on" src="img/item-left.png" alt="left" />
+                        <img class="item-arr" src="img/item-left-dark.png" alt="left-dark" />
+                    </div>
+                    <div class="item-right">
+                        <img class="item-arr on" src="img/item-right.png" alt="right" />
+                        <img class="item-arr" src="img/item-right-dark.png" alt="right-dark" />
+                    </div>
+                </div>             
+            </article>
+            <article class="men">
+                <div class="article-position">
+                    <div class="category-top-wrap">
+                        <div class="category-title">MEN CATEGORY BEST</div>
+                        <div class="category-more"><a href="#">더보기 ></a></div>
+                    </div>
+                    <div class="item-mask">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 퍼펙트 토너 2X 포 맨</div>
+                                    <div class="item-price"><del>20,000</del><br/><b>20%</b> ￦ 16,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 퍼펙트 에멀전 2X 포 맨</div>
+                                    <div class="item-price">￦ 20,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">자작나무 수액 수분 플루이드 포맨</div>
+                                    <div class="item-price">￦ 14,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">양배추 오일 컨트롤 플루이드 포맨</div>
+                                    <div class="item-price">￦ 14,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-mask w-480">
+                        <div class="item-horizon-wrap">
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">1</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/1.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 퍼펙트 토너 2X 포 맨</div>
+                                    <div class="item-price"><del>20,000</del><br/><b>20%</b> ￦ 16,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">2</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/2.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">블랙슈가 퍼펙트 에멀전 2X 포 맨</div>
+                                    <div class="item-price">￦ 20,000</div>
+                                </div>
+                            </div>
+                            <div class="item-wrap-sub-480">
+                                <div class="item">
+                                    <div class="item-rank">3</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/3.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">자작나무 수액 수분 플루이드 포맨</div>
+                                    <div class="item-price">￦ 14,000</div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-rank">4</div>
+                                    <div class="item-pic"><a href="#"><img src="img/men/4.jpg" alt="item-pic" /></a></div>
+                                    <div class="item-txt">양배추 오일 컨트롤 플루이드 포맨</div>
+                                    <div class="item-price">￦ 14,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-arrow-wrap">
+                    <div class="item-left">
+                        <img class="item-arr on" src="img/item-left.png" alt="left" />
+                        <img class="item-arr" src="img/item-left-dark.png" alt="left-dark" />
+                    </div>
+                    <div class="item-right">
+                        <img class="item-arr on" src="img/item-right.png" alt="right" />
+                        <img class="item-arr" src="img/item-right-dark.png" alt="right-dark" />
+                    </div>
+                </div>       
+            </article>
+            <article class="bottom-banner">
+                <div class="article-position banner-article">
+                    <div class="bottom-banner-item"><a href="#"><img src="img/banner/bottom-banner-2.png" alt="bottom-banner" /></a></div>
+                    <div class="bottom-banner-item"><a href="#"><img src="img/banner/bottom-banner-1.png" alt="bottom-banner" /></a></div>
+                </div>
+            </article>
+            <article class="review">
+                <div class="article-position review-article">
+                    <div class="category-top-wrap">
+                        <div class="category-title">YOUTUBE 영상 리뷰</div>
+                        <div class="category-more"><a href="https://www.youtube.com/channel/UCKyIfDxlcdTBhUzv_RsuR-g">더보기 ></a></div>
+                    </div>
+                    <div class="item-mask w-480 w-480-review" >
+                        <div class="item-horizon-wrap review-wrap">
+                            <div class="review-item">
+                                <div class="item-pic review-pic"><a href="#"><img src="img/review/1.png" alt="review-pic" /></a></div>
+                                <div class="item-txt">잡티가 올라올 기미가 보이면, 스킨푸드 유자C 잡티 맑음 에센스</div>
+                            </div>
+                            <div class="review-item">
+                                <div class="item-pic review-pic"><a href="#"><img src="img/review/2.png" alt="review-pic" /></a></div>
+                                <div class="item-txt">[Begin Again, SKINFOOD] 그린캐비어로 예뻐지는 수분 포도 여행 45초 (with 헤이즐)</div>
+                            </div>
+                            <div class="review-item">
+                                <div class="item-pic review-pic"><a href="#"><img src="img/review/3.png" alt="review-pic" /></a></div>
+                                <div class="item-txt">[스킨푸드X겟잇뷰티] 水분특공대 Pick! 수분체포템 수분 포도 바운스 크림 (with.민스코, 체스)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </article>
+        </section>
+        <footer>
+            <div class="scroll-480">
+                <ul class="footer-menu">
+                    <li class="footer-menu-top"><a href="#">개인정보 처리방침</a></li>
+                    <li class="footer-menu-top"><a href="#">이용약관</a></li>
+                    <li class="footer-menu-top"><a href="#">공지사항</a></li>
+                    <li class="footer-menu-top"><a href="#">매장개설 문의</a></li>
+                    <li class="footer-menu-top"><a href="#">제휴문의</a></li>
+                    <li class="footer-menu-top"><a href="#">본사 오시는길</a></li>
+                    <li class="footer-menu-top"><a href="#">US</a></li>
+                    <li class="footer-menu-top"><a href="#">China</a></li>
+                </ul>
+            </div>
+            <div class="footer-button-wrap">
+                <div class="footer-but"><a href="https://www.facebook.com/theskinfood.kr" target="_blank"><img src="img/footer/footer-but-1.png" alt="footer-but" /></a></div>
+                <div class="footer-but"><a href="https://www.youtube.com/channel/UCKyIfDxlcdTBhUzv_RsuR-g" target="_blank"><img src="img/footer/footer-but-2.png" alt="footer-but" /></a></div>
+                <div class="footer-but"><a href="https://instagram.com/skinfood_official" target="_blank"><img src="img/footer/footer-but-3.png" alt="footer-but" /></a></div>
+            </div>
+            <div class="footer-con-wrap">
+                <div class="footer-con">
+                    <div class="footer-con-title">
+                        <div class="footer-con-txt">공지사항 <b>▼</b></div>
+                        <div class="notice-more"><a href="#">더보기 ></a></div>
+                    </div>
+                    <div class="footer-con-item-wrap f-480">
+                        <div class="notice-item"><a href="#">기준일 및 주주명부 폐쇄기간 설정 ...</a></div>
+                        <div class="notice-item"><a href="#">스킨푸드 개인정보 취급방침 및 이...</a></div>
+                        <div class="notice-item"><a href="#">[공지] 5월 고객 상담실 안내</a></div>
+                        <div class="notice-item"><a href="#">[당첨자발표] 명동점 오픈 이벤트...</a></div>
+                        <div class="notice-item"><a href="#">[스킨푸드] 2019년 결산공고</a></div>
+                    </div>
+                </div>
+                <div class="footer-con">
+                    <div class="footer-con-title">
+                        <div class="footer-con-txt">고객 상담실 <b>▼</b></div>
+                    </div>
+                    <div class="footer-con-item-wrap f-480">
+                        <div class="footer-con-item">
+                            <b>평일&nbsp;&nbsp;</b>am 09:00 ~ pm 17:30<br/>
+                            <b>점심시간&nbsp;&nbsp;</b>am 11:30 ~ pm 12:30<br/><br/>
+                        </div>
+                        <div class="footer-con-item">
+                            주말 및 공휴일은 1:1 문의를 이용하세요
+                            <div class="consul_but"><a href="#"><b>1:1문의 ></b></a></div>
+                        </div>
+                        <div class="footer-con-item"><br/><b>080-012-7878</b><br/></div>
+                        <div class="footer-con-item"><br/><b>For overseas business inquiries: overseas@theskinfood.com</b></div>
+                        <div class="footer-con-item"><b>+82-2-3487-8887</b></div>
+                    </div>
+                </div>
+                <div class="footer-con">
+                    <div class="footer-con-title">
+                        <div class="footer-con-txt footer-logo"><img src="img/footer/footer-logo.png" alt="footer-logo" /></div>
+                    </div>
+                    <div class="footer-con-item-wrap footer-on">
+                        <div class="footer-con-item"><b>상호</b> : (주)스킨푸드 ㅣ 대표이사 유근직 <br/> Tel : 02-597-4191 ㅣ Fax : 02-597-4199</div>
+                        <div class="footer-con-item"><b>주소</b> : 경기도 안성시 미양면 계륵리 267-4 스킨푸드</div>
+                        <div class="footer-con-item"><b>사업자등록번호</b> : 125-81-54503</div>
+                        <div class="footer-con-item"><b>통신사업자번호</b> : 제2005-50호</div>
+                        <div class="footer-con-item"><b>제휴문의</b> : webmaster@theskinfood.com</div>
+                        <div class="footer-con-item"><b>호스팅 사업자</b> : 영우디지탈</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>

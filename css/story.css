@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+.goto-top {
+    width: 80px;
+    height: 80px;
+    line-height: 20px;
+}
+.story-title {
+    background-color: #fed53e;
+    height: 125px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+}
+
+.story-title > strong {
+    font-size: 35px;
+}
+
+.story-article {
+    margin: 200px auto;
+}
+
+.story-pic-wrap {
+    margin-bottom: 65px;
+    margin-top: 15px;
+}
+
+/* article - knowhow */
+.knowhow-title-wrap {
+    width: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.knowhow-title {
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.title-bg {
+    width: 80%;
+    height: 15px;
+    background-color: #fed53e;
+    margin: 0 auto;
+    position: relative;
+    top: -13px;
+    z-index: -1;
+}
+
+.knowhow-text {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* article - lifestyle */
+.lifestyle {
+    text-align: center;
+}
+
+.lifestyle-title-wrap{
+    margin: 0 auto;
+}
+.lifestyle-title {
+    margin: 0 auto;
+}
+
+.lifestyle-title > h3 {
+    font-weight: 900;
+}
+
+.lifestyle-title > .title-bg {
+    top: -20px;
+}
+
+.lifestyle-sub-title {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.lifestyle-item-wrap {
+    margin-top: 60px;
+}
+
+.lifestyle-item-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.lifestyle-item-pic {
+    margin-top: 15px;
+}
+
+.lifestyle-item-text {
+    margin-top: 15px;
+}
+
+.story-left-side {
+    right: -3%;
+}
+
+.story-right-side {
+    left: -3%;
+}
+
+.story-in-title {
+    position: absolute;
+    top: -15%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.story-pic-wrap {
+    position: relative;
+}
+
+.pic-bg {
+    width: 60%;
+    height: 60%;
+    background-color: rgba(254, 213, 62, 0.85);
+    position: absolute;
+    z-index: -1;
+}
+
+.pic-bg-1 {
+    bottom: -7%;
+    left: -3%;
+}
+
+.pic-bg-2 {
+    bottom: -7%;
+    right: -3%;
+}
+
+.pic-bg-3 {
+    top: -7%;
+    left: -3%;
+}
+
+.story-text-wrap {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(251, 213, 62, 0.85);
+    text-align: center;
+    font-size: 13px;
+    padding: 5%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.ls{
+    z-index: 2;
+}
+@media all and (max-width: 1199px) and (min-width: 1024px) {
+    .story-in-title {   
+        top: -20%;
+    }
+}
+
+@media all and (max-width: 1023px) and (min-width: 992px) {
+    .knowhow-title{
+        font-size: 18px;
+    }
+    .story-in-title {   
+        top: -30%;
+    }
+    .story-text-wrap {
+        font-size: 11px;
+    }
+    
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+    .knowhow-title{
+        font-size: 18px;
+    }
+    .lifestyle-item-title{
+        font-size: 15px;
+    }
+    .lifestyle-item-text{
+        font-size: 13px;
+    }
+    .story-in-title {   
+        top: -30%;
+    }
+    .story-text-wrap {
+        font-size: 11px;
+        top: 15%;
+    }
+}
+
+@media all and (max-width: 767px) and (min-width: 576px) {
+    .f_right{
+        position: relative;
+        top: 90%;
+    }
+    .lifestyle-item-wrap{
+        margin: 0;
+    }
+    .lifestyle-item{
+        margin-top: 100px;
+    }
+    .story-text-wrap {
+        font-size: 11px;
+    }
+    .story-left-side{
+        left: 0;
+    }
+    .story-right-side{
+        left: 0;
+    }
+    .rs{
+        left: 7%;
+        top: 150px;
+    }
+    .ls{
+        left: 7%;
+        top: 550px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .f_right{
+        position: relative;
+        top: 90%;
+    }
+    .lifestyle-item-wrap{
+        margin: 0;
+    }
+    .lifestyle-item{
+        margin-top: 100px;
+    }
+    .story-text-wrap {
+        font-size: 11px;
+    }
+    .story-left-side{
+        left: 0;
+    }
+    .story-right-side{
+        left: 0;
+    }
+    .rs{
+        left: 7%;
+        top: 150px;
+    }
+    .ls{
+        left: 7%;
+        top: 500px;
+    }
+}
